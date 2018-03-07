@@ -4,7 +4,6 @@ var Pillow = require("../models/pillow");
 var Comment = require("../models/comment");
 
 middlewareObj.checkPillowOwnership = function(req, res, next) {
-
     if (req.isAuthenticated()) {
         Pillow.findById(req.params.id, function(err, foundPillow) {
             if (err) {
@@ -65,3 +64,5 @@ middlewareObj.isLoggedIn = function(req, res, next) {
 
 
 module.exports = middlewareObj;
+
+//TESTING GITHUB APP
