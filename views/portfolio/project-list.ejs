@@ -1,0 +1,61 @@
+<% include ../partials/portfolioheader.ejs %>
+<link rel="stylesheet" href="/../stylesheets/main.css" type="text/css">
+
+<div class="container brief border">
+	<div class="inner-container container ">
+		<h1>Project Showcase: The latest ones I've been working on.</h1>
+	</div>
+</div>
+
+<div class="row text-center" style="display:flex flex-wrap:flex;">
+     <% projects.forEach(function(projects) { %>        
+        <div class="col-md-12"> 
+       
+            <div class="inner-container container helper-container">
+						
+	            
+				<div class="project-image" style="background-image:url('<%= projects.myImage %>')">
+				<div class="project-overlay">
+				<a href="<%= projects.link %>">
+				<button class="project-button">take me there<span></span></button>
+				</a>
+				</div>
+				</div>		             
+	            
+				
+			
+            </div>
+            
+        </div>
+
+</div>        
+<div class="row text-center">
+	<div class="col-md-12">
+		<div class="inner-container container">
+		<a href="/project-list/<%=projects._id %>">
+		<h4 class="h4brand"><%= projects.stack %></h4>		
+		</a>
+		<a href="/project-list/<%=projects._id %>">
+	    <h3 class="h3brand lowercase"><%= projects.name %></h4>
+		</a>
+	    </div>	    
+	    <div class="inner-container container separator">
+	    <hr>
+	    </div>
+    </div>
+</div>       
+      	
+        
+    <% }); %>
+
+<div class="container-fluid bordered">
+	  <div class="container">
+	  <h3>Are you interested in working with me?</h3>
+	  <a class="project-button" href="mailto:mark-toth@outlook.com">I'm available for hire.<span></span></a>
+	  	  </div>
+</div>   
+</div>
+
+
+
+
