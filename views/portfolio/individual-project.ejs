@@ -3,14 +3,14 @@
 
 <div class="container brief border">
 	<div class="inner-container container ">
-        <h1><%= project.name %></h1>
+        <h1><a href="<%= project.link %>"><%= project.name %></a></h1>
         <h4 class="h4brand"><%= project.stack %></h4>
 	</div>
 </div>
 
 <div class="row text-center" style="display:flex flex-wrap:flex;">   
       
-</div>        
+        
 <div class="row text-center">
 	<div class="col-md-12">
 		<div class="inner-container container">		
@@ -19,23 +19,27 @@
 	    <p><%= project.description %></p>
         </div>	
 <div class="col-md-12">        
-        <div class="inner-container container">
-	            <div class="inner-project-image" style="background-image:url('<%= project.pimage %>')">               
-	            </div>
+        <div class="inner-container container helper-container">
+				<a href="<%= project.link %>">
+	            	<div class="inner-project-image" style="background-image:url('<%= project.pimage %>')"> 
+						 
+				    </div>
+				</a>  
+				
         </div>
             
-        </div>    
-	    <div class="inner-container container separator">
-	    <hr>
-	    </div>
-    </div>
-	</div>  	
+</div>    
+<div class="inner-container container separator">
+	<hr>
+</div>
+</div>
+</div>  	
             
 
 <div class="container-fluid bordered">
 	  <div class="container">
-	  <h3>Have a look at my latest projects.</h3>
-	  <a class="project-button" href="mailto:mark-toth@outlook.com">take me there<span></span></a>
+	  <h3>Are you interested in working with me?</h3>
+	  <a class="project-button" href="mailto:mark-toth@outlook.com">I'm available for hire.<span></span></a>
 	  	  </div>
 </div>   
 </div>

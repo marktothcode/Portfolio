@@ -126,6 +126,7 @@ p {
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     background: white;
     border: 1px solid #1abb99;
+    padding: 14px;
 }
 
 .border {
@@ -168,7 +169,7 @@ p {
 }
 
 .navbar-nav>li>a {
-    padding: 1em;
+    padding: 15px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -281,7 +282,18 @@ i {
     margin: 1.7em 0px 3em 0px;
 }
 
+a {
+    color: #2c3d4d;
+    text-decoration: none;
+}
+
 a:focus, a:hover {    
     text-decoration: none;
+    color: #1abb99;
 
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    border: 0;
 }
