@@ -129,6 +129,10 @@ p {
     padding: 14px;
 }
 
+.navbar-default .navbar-nav>li>a:focus {
+    padding: 15px;
+}
+
 .border {
 	border-bottom: 1px solid #2c3d4d;
 }

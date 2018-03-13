@@ -16,6 +16,10 @@ body {
     overflow: hidden;  
 }
 
+.thumbnail {
+    padding: 0px;
+}
+
 .caption-full {
     margin: 15px 15px 15px 15px;
 }

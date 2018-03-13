@@ -82,5 +82,5 @@ app.use(indexRoutes);
 app.use("/pillows/:id/comments", commentRoutes);
 app.use("/pillows", pillowRoutes);
 
-app.listen(80, '159.65.53.136');
+app.listen(8080, 'localhost');
   
