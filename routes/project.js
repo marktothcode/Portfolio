@@ -84,7 +84,7 @@ router.post("/", function(req,res){
 //missing upload function above, not sure how to implement...
 
 router.get("/new", function(req, res){
-	res.render("portfolio/new");
+	res.render("portfolio/x-new");
 });
 
 // PROJECT EDIT ROUTE
